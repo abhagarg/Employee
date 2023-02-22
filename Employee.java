@@ -23,7 +23,7 @@ public abstract class Employee implements java.io.Serializable {
             System.out.println(e);
         }
     }
-    
+    //Main constructor
     Employee(String name, int age, double salary, String designation) {
         this.name = name;
         this.age = age;
@@ -42,6 +42,7 @@ public abstract class Employee implements java.io.Serializable {
             this.age = UserException.readAge();
             this.salary = salary;
             this.designation = designation;
+            //Randomly generated id between 0 to 100
             this.id = (int)(Math.random()*100)+100;
 
             pstmt.setInt(1, id);
