@@ -78,7 +78,7 @@ public abstract class Employee implements java.io.Serializable {
         try{
             ResultSet rs = stmt.executeQuery("select * from employees order by emp_" + param);
             System.out.println("-------------------------------");
-            System.out.println("ID Name Age Designation Salary");
+//             System.out.println("ID Name Age Designation Salary");
             System.out.println("-------------------------------");
             while(rs.next()) {
                     System.out.print(rs.getInt(1));
